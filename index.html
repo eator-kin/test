@@ -7,10 +7,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="//cdn.shopify.com/s/files/1/2030/2737/t/6/assets/gallery-materialize.min.css?v=5949261343333427621" rel="stylesheet" type="text/css" media="all" />
     <link href="//cdn.shopify.com/s/files/1/2030/2737/t/6/assets/theme.scss.css?v=13040590330786245977" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script id="shopify-features" type="application/json">{"accessToken":"35296d37158a1bea1de61bf4abf416cf","betas":["rich-media-storefront-analytics"],"domain":"materialize-shopify-themes.myshopify.com","predictiveSearch":true,"shopId":20302737,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}</script>
     <script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
     <script id="__st">var __st={"a":20302737,"offset":-14400,"reqid":"a50ed1ad-cb4e-436b-b6a0-a8a060f46b24","pageurl":"materialize-shopify-themes.myshopify.com\/","u":"6c688b172e2a","p":"home"};</script>
-    <title>Document</title>
+    <title>برمج روبوت - المنزل</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Harmattan&family=Lemonada&display=swap');
         header.saad{
@@ -18,14 +19,25 @@
             background: #424242;
             background-size: cover;
             background-position: center;
-            min-height: 600px;
+            min-height: 550px;
         }
-        @media screen and (max-width: 470px){
-            header{
+        @media screen and (max-width: 600px){
+            header.saad{
                 min-height: 500px;
             }
+            .main-img{
+                margin-top: 15px;
+                margin-bottom: 25px;
+                max-height: 300px;
+            }
         }
-        
+        @media screen and (max-width: 450px){
+            .main-img{
+                margin-top: 15px;
+                margin-bottom: 25px;
+                max-height: 150px;
+            }
+        }
         p{
             color: whitesmoke;
         }
@@ -35,38 +47,94 @@
     </style>
 </head>
 <body>
+
     <header class="saad">
-        <nav class="nav-extended transparent">
+
+        <nav class="nav-extended transparent lighten-4">
             <div class="nav-wrapper container">
-                <a href="/" class="brand-logo site-logo right" style="font-family: 'Lemonada', cursive;"> برمج روبوت</a>
+                <a href="#" style="font-family: 'Lemonada', cursive;" class="brand-logo right">برمج روبوت</a>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="left hide-on-med-and-down">
-                    <li><a href="/account/register" id="customer_register_link">انشاء حساب</a></li>
-                    <li><a href="/account/login" id="customer_login_link">تسجيل الدخول</a></li>
+                    <li class="logged-out">
+                        <a href="#" class="modal-trigger" data-target="modal-signup">إنشاء حساب</a>
+                    </li>
+                    <li class="logged-out">
+                        <a href="#" class="modal-trigger" data-target="modal-login">تسجيل الدخول</a>
+                    </li>
                     <li><a class="fullscreen-search" href="#"><i class="material-icons">search</i></a></li>
                     <li><a href="/cart"><i class="material-icons left">shopping_basket</i>السلة</a></li>
                     <li><a href="/blogs/news" class="site-nav__link">المتجر</a></li>
                     <li><a href="/blogs/news" class="site-nav__link">الدورات</a></li>
                     <li class="site-nav--active active"><a href="/" class="site-nav__link">المنزل</a></li>
+                    
                 </ul>
             </div>
         </nav>
-        <div id="cont" class="row">
-            <div class="col s6">
-                <div class="container">
+
+        <div id="cont" class="row center">
+            <div class="col s12 l6"><img class="main-img" src="img/main-dash-add.svg" alt=""></div>
+
+            <div class="col s12 l6">
+                <div class="container right-align">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis similique optio inventore facere quae numquam laboriosam fugiat cumque debitis vitae, repellat aliquam pariatur dolores nihil nemo dolore impedit amet rerum!</p>
                 </div>
             </div>
-            <div class="col s6"><img src="img/main-dash-add.svg" alt=""></div>
         </div>
+
         <ul class="side-nav" id="nav-mobile">
-            <li class="right-align"> <a href="/account/login" id="customer_login_link"><i class="material-icons left">login</i>تسجيل الدخول</a></li>
-            <li class="right-align"> <a href="/account/register" id="customer_register_link"><i class="material-icons left">account_circle</i>انشاء حساب</a></li>
+            <li class="logged-out">
+                <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
+            </li>
+            <li class="logged-out">
+                <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Sign up</a>
+            </li>
             <li class="site-nav--active active right-align"><a href="/" class="site-nav__link"><i class="material-icons left">home</i>المنزل</a></li>
             <li class="site-nav right-align"><a href="/" class="site-nav__link"><i class="material-icons left">code</i>الدورات</a></li>
             <li class="site-nav right-align"><a href="/" class="site-nav__link"><i class="material-icons left">shopping_bag</i>المتجر</a></li>
             <li class="site-nav right-align"><a href="/" class="site-nav__link"><i class="material-icons left">shopping_basket</i>السلة</a></li>
         </ul>
+        
+        <!-- SIGN UP MODAL -->
+        <div id="modal-signup" class="modal">
+            <div class="modal-content">
+                <h4 class="right">إنشاء حساب</h4><br />
+                <form id="signup-form">
+                    <div class="input-field">
+                        <input type="email" id="signup-email" required />
+                        <label for="signup-email">عنوان البريد الالكتروني</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="signup-password" required />
+                        <label for="signup-password">كلمة السر</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="signup-password" required />
+                        <label for="signup-password">اعد إدخال كلمة السر</label>
+                    </div>
+                    <button class="btn yellow darken-2 z-depth-0">انشاء</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- LOGIN MODAL -->
+        <div id="modal-login" class="modal">
+            <div class="modal-content">
+                <h4 class="right">تسجيل الدخول</h4><br />
+                <form id="login-form">
+                <div class="input-field">
+                    <input type="email" id="login-email" required />
+                    <label for="login-email">عنوان البريد الالكتروني</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="login-password" required />
+                    <label for="login-password">كلمة السر</label>
+                </div>
+                <button class="btn yellow darken-2 z-depth-0">اتمام</button>
+                </form>
+            </div>
+        </div>
+            
+            
     </header>
 
     <article>
@@ -167,8 +235,9 @@
                 </div>
             </div>
         </div>
-</article>
+    </article>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/shopify1.js"></script>
     <script>
@@ -179,5 +248,6 @@
         }
     });
     </script>
+
 </body>
 </html>
