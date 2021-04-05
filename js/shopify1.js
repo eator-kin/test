@@ -1353,7 +1353,7 @@ if(ColorThief.prototype.getColor=function(a,b){var c=this.getPalette(a,5,b),d=c[
           var navbar = $('<nav id="placeholder-navbar"></nav>');
           var navWrapper = $('<div class="nav-wrapper"></div>');
           var container = $('<div class="container"></div>');
-          var backBtn = $('<a class="back-btn"><i class="material-icons">arrow_back</i><span>Back</span></a>');
+          var backBtn = $('<a class="back-btn"><i class="material-icons">arrow_back</i><span>عودة</span></a>');
           var originalNavColor = '';
           if ($('nav').length) {
             originalNavColor = $('nav').css('background-color');
