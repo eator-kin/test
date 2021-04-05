@@ -21,7 +21,7 @@
             background-position: center;
             min-height: 550px;
         }
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 640px){
             header.saad{
                 min-height: 500px;
             }
@@ -31,11 +31,25 @@
                 max-height: 300px;
             }
         }
-        @media screen and (max-width: 450px){
+        @media screen and (max-width: 520px){
             .main-img{
                 margin-top: 15px;
                 margin-bottom: 25px;
-                max-height: 150px;
+                max-height: 250px;
+            }
+        }
+        @media screen and (max-width: 420px){
+            .main-img{
+                margin-top: 15px;
+                margin-bottom: 25px;
+                max-height: 200px;
+            }
+        }
+        @media screen and (max-width: 370px){
+            .main-img{
+                margin-top: 15px;
+                margin-bottom: 25px;
+                max-height: 180px;
             }
         }
         p{
@@ -83,10 +97,10 @@
 
         <ul class="side-nav" id="nav-mobile">
             <li class="logged-out">
-                <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
+                <a href="#" class="right-align modal-trigger" data-target="modal-login"><i class="material-icons left">login</i>تسجيل الدخول</a>
             </li>
             <li class="logged-out">
-                <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Sign up</a>
+                <a href="#" class="right-align modal-trigger" data-target="modal-signup"><i class="material-icons left">account_circle</i>انشاء حساب</a>
             </li>
             <li class="site-nav--active active right-align"><a href="/" class="site-nav__link"><i class="material-icons left">home</i>المنزل</a></li>
             <li class="site-nav right-align"><a href="/" class="site-nav__link"><i class="material-icons left">code</i>الدورات</a></li>
