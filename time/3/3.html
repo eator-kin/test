@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>برمج روبوت - المنزل</title>
+</head>
+<body>
+    <!-- رئس الموقع -->
+    <header class="saad">
+        <!-- Large Nav -->
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper grey darken-4">
+              <div class="container">
+                <a href="#" style="margin-right: 20px; font-size: 330%; font-family: 'Markazi Text', serif;" class="brand-logo right">برمج روبوت</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class="left hide-on-med-and-down">
+                    <li class="logged-out">
+                        <a href="#" class="modal-trigger" data-target="modal-signup"><i class="material-icons">person_add</i></a>
+                    </li>
+                    <li class="logged-out">
+                        <a href="#" class="modal-trigger" data-target="modal-login"><i class="material-icons">login</i></a>
+                    </li>
+                    <li style=" font-size: 200%; margin: 0 20px" >|</li>
+
+                    <li><a href="#"><i class="material-icons">shopping_basket</i></a></li>
+                    <li><a href="#"><i class="material-icons">cast_for_education</i></a></li>
+                    <li class="btn-med waves-effect waves-light white"> <a href="/"><i class="material-icons black-text">home</i></a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+        
+        <ul class="sidenav" id="mobile-links">
+            <li class="logged-out">
+                <a href="#" class="right-align modal-trigger" data-target="modal-login"><i class="material-icons left">login</i>تسجيل الدخول</a>
+            </li>
+            <li class="logged-out">
+                <a href="#" class="right-align modal-trigger" data-target="modal-signup"><i class="material-icons left">person_add</i>انشاء حساب</a>
+            </li>
+            <hr>
+            <li class="active right-align"><a href="/"><i class="material-icons left">home</i>المنزل</a></li>
+            <li class="right-align"><a href="/"><i class="material-icons left">cast_for_education</i>الدورات</a></li>
+            <li class="right-align"><a href="/"><i class="material-icons left">shopping_basket</i>السلة</a></li>
+        </ul>
+          
+        <!-- slide -->
+        <div id="cont" class="row center">
+            <div style="margin-top: 25px;" class="col s12 l6"><img class="main-img" src="img/main-dash-add.svg" alt=""></div>
+
+            <div class="col s12 l6">
+                <div class="container right-align">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis similique optio inventore facere quae numquam laboriosam fugiat cumque debitis vitae, repellat aliquam pariatur dolores nihil nemo dolore impedit amet rerum!</p>
+                </div>
+            </div>
+        </div>
+       
+        <!-- SIGN UP MODAL -->
+        <div id="modal-signup" class="modal">
+            <div class="modal-content">
+                <h4 class="right">إنشاء حساب</h4><br />
+                <form id="signup-form">
+                    <div class="input-field">
+                        <input type="email" id="signup-email" required />
+                        <label for="signup-email">عنوان البريد الالكتروني</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="signup-password" required />
+                        <label for="signup-password">كلمة السر</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="signup-password" required />
+                        <label for="signup-password">اعد إدخال كلمة السر</label>
+                    </div>
+                    <button class="btn yellow darken-2 z-depth-0">انشاء</button>
+                </form>
+            </div>
+        </div>
+        <!-- LOGIN MODAL -->
+        <div id="modal-login" class="modal">
+            <div class="modal-content">
+                <h4 class="right">تسجيل الدخول</h4><br />
+                <form id="login-form">
+                <div class="input-field">
+                    <input type="email" id="login-email" required />
+                    <label for="login-email">عنوان البريد الالكتروني</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="login-password" required />
+                    <label for="login-password">كلمة السر</label>
+                </div>
+                <button class="btn yellow darken-2 z-depth-0">اتمام</button>
+                </form>
+            </div>
+        </div>  
+    </header>
+
+    <!-- الفوائد -->
+    <article style="margin-top: 10%;"> 
+        <div class="container">
+            <div class="row">
+                <div class="col l6 m6 s12">
+                    <div class="cad card-2">
+                        <a href="">
+                            <h3 style="color: black;">Theming</h3>
+                            <p style="color: black;">Learn how to easily customize and modify your app’s design to fit your
+                            brand across all mobile platform styles.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col l6 m6 s12">
+                    <div class="cad card-3">
+                        <a href="">
+                            <h3  style="color: black;">Theming</h3>
+                            <p  style="color: black;">Learn how to easily customize and modify your app’s design to fit your
+                            brand across all mobile platform styles.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+        
+    <!-- الدورات -->
+    <article style="margin-top: 10%;">
+        <div class="row">
+            <div class="col s6 m4 l3 right">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/robotic.svg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4 right-align">دورة برمج روبوت<span style="font-size: 15px; text-decoration: underline;" class="left red-text">إقراء المزيد</span></span>
+                        <br>
+                        <p class="right-align"><a class="waves-effect waves-light btn grey darken-4" href="#">سجل</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- نهاية الموقع -->
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text right">نص متطور حول المنصة</h5>
+              <br>
+              <p class="right grey-text text-lighten-4">الكل يحب منصتنا يا قلبي يا قلبي</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="center white-text">الصفحات</h5>
+                <ul class="center">
+                    <div class="right-align">
+                        <li><a class="grey-text text-lighten-3" href="#!">المنزل</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">الدورات</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">السلة</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">الملفات</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">حول المنصة</a></li>
+                    </div>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          حقوق النشر محفوظة لموقع <a href=""> برمج روبوت</a> © 
+          <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="js/brmj.js"></script> -->
+    <script>
+        //   var instance = M.Tabs.init(el, options);
+
+        $(document).ready(function(){
+      $('.sidenav').sidenav();
+    //   $('.tabs').tabs();
+    });
+        $(document).ready(function() {
+            var categories = $('nav .categories-container');
+            if (categories.length) {
+            categories.pushpin({ top: categories.offset().top });
+            }
+        });
+        // setup materialize components
+        document.addEventListener('DOMContentLoaded', function() {
+
+        var modals = document.querySelectorAll('.modal');
+        M.Modal.init(modals);
+
+        var items = document.querySelectorAll('.collapsible');
+        M.Collapsible.init(items);
+
+        });
+
+        
+    </script>
+
+</body>
+</html>
