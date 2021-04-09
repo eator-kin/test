@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+
+header.saad{
+    /* background: #1a237e; */
+    background: #212121;
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+}
+#logo{
+  margin-right: 60px; 
+  font-size: 330%; 
+  font-family: 'Markazi Text', serif; 
+
+}
+@media screen and (max-width: 640px){
+    header.saad{
+        min-height: 500px;
+    }
+    .main-img{
+        margin-top: 15px;
+        margin-bottom: 25px;
+        max-height: 300px;
+    }
+}
+@media screen and (max-width: 520px){
+    .main-img{
+        margin-top: 15px;
+        margin-bottom: 25px;
+        max-height: 250px;
+    }
+    #logo{
+      font-size: 270%;
+    }
+}
+@media screen and (max-width: 420px){
+    .main-img{
+        margin-top: 15px;
+        margin-bottom: 25px;
+        max-height: 200px;
+    }
+}
+@media screen and (max-width: 370px){
+    .main-img{
+        margin-top: 15px;
+        margin-bottom: 25px;
+        max-height: 180px;
+    }
+}
+p{
+    color: white;
+}
+.cad{
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+.cad:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.cad h3{
+  font-weight: 600;
+  text-align: right;
+}
+.cad img{
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  max-height: 10px;
+}
+.card-1{
+  background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+      background-repeat: no-repeat;
+    background-position: left;
+    background-size: 80px;
+}
+.card-2{
+    background-image: url(https://img.icons8.com/ios/452/arduino-uno-board.png);
+      background-repeat: no-repeat;
+    background-position: left;
+    background-size: 80px;
+}
+.card-3{
+    background-image: url(http://simpleicon.com/wp-content/uploads/Code-Optimization-2.png);
+      background-repeat: no-repeat;
+    background-position: left;
+    background-size: 80px;
+}
+@media(max-width: 990px){
+  .cad{
+    margin: 20px;
+  }
+}
